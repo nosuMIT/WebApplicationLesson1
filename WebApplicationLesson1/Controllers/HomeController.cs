@@ -41,6 +41,7 @@ namespace WebApplicationLesson1.Controllers
                     return "Добрый вечер";
 
                 default: return "Добрый день";
+
             }
                 
         }
