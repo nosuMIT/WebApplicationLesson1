@@ -27,6 +27,10 @@ namespace WebApplicationLesson1.Controllers
         {
             return View();
         }
+        public string Hello()
+        {
+            return "Hello World by Arsen!";
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
