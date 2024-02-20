@@ -28,6 +28,11 @@ namespace WebApplicationLesson1.Controllers
             return View();
         }
 
+        public string Hello()
+        {
+            return "Hello from Gutnova";
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
