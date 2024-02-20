@@ -23,6 +23,11 @@ namespace WebApplicationLesson1.Controllers
             return View();
         }
 
+        public IActionResult Privacy()
+        {
+            return View();
+        }
+
         public string Hello()
         {
             return "Hallo von David";
