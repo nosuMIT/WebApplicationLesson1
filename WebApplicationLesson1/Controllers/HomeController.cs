@@ -18,9 +18,18 @@ namespace WebApplicationLesson1.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        /*public IActionResult Index()
         {
             return View();
+        }*/
+
+        public string Calc(int a, int b)
+        {
+            //return "<a href='Home/Index'>This is a link to a Index page</a>";
+            //return "This is a new page for our ASP project";
+            //return (id * 10) + " " + name;
+            
+            return (a + b).ToString();
         }
 
         public IActionResult Privacy()
