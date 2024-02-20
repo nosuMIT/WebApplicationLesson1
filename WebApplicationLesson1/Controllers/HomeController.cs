@@ -23,9 +23,9 @@ namespace WebApplicationLesson1.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public string Hello()
         {
-            return View();
+            return "Hallo von David";
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
