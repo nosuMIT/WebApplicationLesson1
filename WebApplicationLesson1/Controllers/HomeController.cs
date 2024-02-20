@@ -28,9 +28,26 @@ namespace WebApplicationLesson1.Controllers
             return View();
         }
 
+        DateTime time = new DateTime();
+        public string DetermineTheTime()
+        {
+            switch (time)
+            {
+                case 1: (time.Hour > 0.00 && time.Hour < 6.00)
+                    return "Доброй ночи";
+                case 2: (time.Hour >= 6.00 && time.Hour < 12.00)
+                    return "Доброе утро";
+                case 4: (time.Hour >= 12.00 && time.Hour < 18.00)
+                    return "Добрый вечер";
+
+                default: return "Добрый день";
+            }
+                
+        }
         public string Hello()
         {
-            return "Hello from Sanakoev";
+
+            return $"{time }";
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
