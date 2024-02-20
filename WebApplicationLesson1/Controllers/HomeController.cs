@@ -25,7 +25,12 @@ namespace WebApplicationLesson1.Controllers
 
         public string Hello()
         {
-            return "Hello!";
+            DateTime localDate = DateTime.Now;
+            if (localDate.Hour < 6) return "Доброй ночи";
+            if (localDate.Hour < 12) return "Доброе утро";
+            if (localDate.Hour < 18) return "Доброй день";
+            else return "Доброй ночи";
+            
         }
 
         public IActionResult Privacy()
