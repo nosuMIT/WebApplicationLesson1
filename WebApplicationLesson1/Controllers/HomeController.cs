@@ -23,6 +23,16 @@ namespace WebApplicationLesson1.Controllers
             return View();
         }
 
+        public string Hello()
+        {
+            DateTime localDate = DateTime.Now;
+            if (localDate.Hour < 6) return "Доброй ночи";
+            if (localDate.Hour < 12) return "Доброе утро";
+            if (localDate.Hour < 18) return "Доброй день";
+            else return "Доброй ночи";
+            
+        }
+
         public IActionResult Privacy()
         {
             return View();
