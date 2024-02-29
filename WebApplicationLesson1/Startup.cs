@@ -46,7 +46,7 @@ namespace WebApplicationLesson1
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Calc}");
+                    pattern: "{controller=Calculator}/{action=Index}/{a?}/{b?}");
             });
         }
     }

@@ -28,8 +28,9 @@ namespace WebApplicationLesson1.Controllers
             //return "<a href='Home/Index'>This is a link to a Index page</a>";
             //return "This is a new page for our ASP project";
             //return (id * 10) + " " + name;
-            
-            return (a + b).ToString();
+
+            //return (a + b).ToString();
+            return $"{a} + {b} = {a+b}";
         }
 
         public IActionResult Privacy()
