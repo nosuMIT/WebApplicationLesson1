@@ -47,6 +47,6 @@ namespace WebApplicationLesson1.Controllers
         }
 
 
-        //http://localhost:5000/start/hello?name=OleG&age=20
+        //о
     }
 }
