@@ -31,5 +31,6 @@ namespace WebApplicationLesson1.Controllers
             }
             return $"0 + 0 = 0";
         }
+        //комментарий для гита
     }
 }
