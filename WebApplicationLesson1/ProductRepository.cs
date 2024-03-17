@@ -16,6 +16,19 @@ namespace WebApplicationLesson1
         {
             return products;
         }
+
+        public Product TryGetById(int id)
+        {
+            foreach (var prod in products)
+            {
+                if (prod.Id==id)
+                {
+                    return prod;
+                }
+            }
+            return null;
+        }
+
         public ProductRepository()
 		{
 		}
