@@ -8,9 +8,9 @@ namespace WebApplicationLesson1.Controllers
 {
     public class CalculatorController : Controller
     {
-        public string Index(double a, double b, string operation)
+        public string Index(double a, double b, string c)
         {
-            switch (operation)
+            switch (c)
             {
                 case "*":
                     return $"{a} * {b} = {a * b}";
@@ -18,11 +18,14 @@ namespace WebApplicationLesson1.Controllers
                     return $"{a} - {b} = {a - b}";
                 case "+":
                     return $"{a} + {b} = {a + b}";
+                case "/":
+                    if (b != 0)
+                        return $"{a} / {b} = {a / b}";
+                    else
+                        return "деление на ноль";
                 default:
-                    if (operation != null)
-                    {
-                        return "не решу, операция непонятная";
-                    }
+                    if (c != null)
+                        return "непонятная операция";
                     return $"{a} + {b} = {a + b}";
             }
         }
