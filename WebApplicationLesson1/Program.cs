@@ -21,6 +21,6 @@ namespace WebApplicationLesson1
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                });
+                }); 
     }
 }

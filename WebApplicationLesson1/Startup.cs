@@ -45,6 +45,11 @@ namespace WebApplicationLesson1
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
+                    name: "calculator",
+                    pattern: "calc/index",
+                    defaults: new { controller = "Calculator", action = "Index" });
+
+                endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
